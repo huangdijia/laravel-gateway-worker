@@ -35,3 +35,11 @@ for help
 ~~~bash
 php artisan gateway-worker:serve --help
 ~~~
+
+## Cluster
+
+|Role|IP|Command|
+|--|--|--|
+|Register|192.168.1.101|php artisan gateway-worker:serve --register --register-bind=0.0.0.0:1215|
+|Gateway|192.168.2.102-105|php artisan gateway-worker:serve --gateway --gateway-bind=0.0.0.0:1216 --register-address=192.168.1.101:1215|
+|Businessworker|192.168.1.106-110|php artisan gateway-worker:serve --businessworker --register-address=192.168.1.101:1215|
