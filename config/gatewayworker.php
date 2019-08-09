@@ -3,6 +3,7 @@
 return [
     'register'         => [
         'bind'      => env('GATEWAYWORKER_REGISTER_BIND', '0.0.0.0:1215'),
+        'name'      => env('GATEWAYWORKER_REGISTER_NAME', 'Register'),
         'processes' => env('GATEWAYWORKER_REGISTER_PROCESSES', 1),
     ],
     'register_address' => env('GATEWAYWORKER_REGISTER_ADDRESS', '127.0.0.1:1215'),

@@ -49,6 +49,7 @@ class ServeCommand extends Command
             ]);
 
             $register        = new Register('text://' . $registerBind);
+            $register->name  = config('gatewayworker.register.name', 'Register');
             $register->count = $registerProcesses;
         }
 
