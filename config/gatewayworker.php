@@ -18,6 +18,6 @@ return [
         'processes'     => env('GATEWAYWORKER_BUSINESSWORKER_PROCESSES', 1),
         'event_handler' => '', // implements \Huangdijia\GatewayWorker\GatewayWorkerEventInterface
     ],
-    'log_file'         => storage_path('workerman.pid'),
-    'pid_file'         => storage_path('workerman.log'),
+    'log_file'         => storage_path('logs/workerman.pid'),
+    'pid_file'         => storage_path('logs/workerman.log'),
 ];
