@@ -8,6 +8,12 @@
 composer require huangdijia/laravel-gateway-worker
 ~~~
 
+publish
+
+~~~bash
+php artisan vendor:publish --provider="Huangdijia\GatewayWorker\GatewayWorkerServiceProvider"
+~~~
+
 ### Lumen
 
 copy config
