@@ -115,8 +115,8 @@ class ServeCommand extends Command
         $argv[1] = $action;
         $argv[2] = $this->option('daemon') ? '-d' : '';
 
-        Worker::$pidFile = config('pid_file', storage_path('workerman.pid'));
-        Worker::$logFile = config('log_file', storage_path('workerman.log'));
+        Worker::$pidFile = config('gatewayworker.pid_file', storage_path('logs/workerman.pid'));
+        Worker::$logFile = config('gatewayworker.log_file', storage_path('logs/workerman.log'));
 
         Worker::runAll();
     }
