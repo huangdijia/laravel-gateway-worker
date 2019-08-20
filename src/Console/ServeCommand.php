@@ -12,7 +12,7 @@ use Huangdijia\GatewayWorker\GatewayWorkerEventInterface;
 class ServeCommand extends Command
 {
     protected $signature = 'gateway-worker:serve
-    {action=start : start|stop|restart|status|connections|help}
+    {action=start : start|stop|restart|reload|status|connections|help}
     {--daemon}
 
     {--register : Enable register service}
@@ -33,7 +33,7 @@ class ServeCommand extends Command
 
     public function handle()
     {
-        if (!in_array($action = $this->argument('action'), ['start', 'stop', 'restart', 'status', 'connections', 'help'])) {
+        if (!in_array($action = $this->argument('action'), ['start', 'stop', 'restart', 'reload', 'status', 'connections', 'help'])) {
             $this->error('Error Arguments');
             exit;
         }
