@@ -73,9 +73,9 @@ class ServeCommand extends Command
             $gateway->name                 = config('gatewayworker.gateway.name', 'Gateway');
             $gateway->count                = $gatewayProcesses;
             $gateway->lanIp                = $lanIp;
-            $gateway->startPort            = 2300;
-            $gateway->pingInterval         = 30;
-            $gateway->pingNotResponseLimit = 0;
+            $gateway->startPort            = config('gatewayworker.gateway.start_port', 2300);
+            $gateway->pingInterval         = config('gatewayworker.gateway.ping_interval', 30);
+            $gateway->pingNotResponseLimit = config('gatewayworker.gateway.ping_not_response_limit', 0);
             $gateway->pingData             = $pingData;
             $gateway->registerAddress      = $registerAddress;
         }
