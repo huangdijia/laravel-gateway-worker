@@ -4,17 +4,14 @@
     "type": "library",
     "keywords": [
         "laravel",
-        "mysql",
         "gateway-worker"
     ],
     "homepage": "https://github.com/huangdijia/laravel-gateway-worker",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "huangdijia",
-            "email": "huangdijia@gmail.com"
-        }
-    ],
+    "authors": [{
+        "name": "huangdijia",
+        "email": "huangdijia@gmail.com"
+    }],
     "require": {
         "php": ">=7.1.0",
         "illuminate/support": "^5.7|^6.0|^7.0",
@@ -23,11 +20,17 @@
         "workerman/gatewayclient": "^3.0",
         "workerman/workerman": "^3.5"
     },
+    "require-dev": {
+        "orchestra/testbench": "^4.0"
+    },
     "autoload": {
-        "files": [
-        ],
         "psr-4": {
             "Huangdijia\\GatewayWorker\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Huangdijia\\GatewayWorker\\Tests\\": "tests/"
         }
     },
     "extra": {
