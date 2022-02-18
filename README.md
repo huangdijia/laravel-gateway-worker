@@ -1,5 +1,6 @@
 # Gateway Worker For Laravel/Lumen
 
+[![Latest Test](https://github.com/huangdijia/laravel-gateway-worker/workflows/tests/badge.svg)](https://github.com/huangdijia/laravel-gateway-worker/actions)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/huangdijia/laravel-gateway-worker.svg?style=flat-square)](https://packagist.org/packages/huangdijia/laravel-gateway-worker)
 [![Total Downloads](https://img.shields.io/packagist/dt/huangdijia/laravel-gateway-worker.svg?style=flat-square)](https://packagist.org/packages/huangdijia/laravel-gateway-worker)
 [![GitHub license](https://img.shields.io/github/license/huangdijia/laravel-gateway-worker)](https://github.com/huangdijia/laravel-gateway-worker)
