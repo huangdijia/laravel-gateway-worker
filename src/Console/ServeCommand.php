@@ -27,18 +27,18 @@ class ServeCommand extends Command
     {--register-bind= : Bind host and port for register}
     {--register-processes= : Process num for register}
 
-    {--register-address= : Register address for gateway or businessworker}
+    {--register-address= : Register address for gateway or business worker}
 
     {--gateway : Enable gateway service}
     {--gateway-bind= : Bind host and port for gateway}
     {--gateway-processes= : Process num for gateway}
     {--lan-ip=127.0.0.1 : Lan IP}
 
-    {--businessworker : Enable businessworker service}
-    {--businessworker-processes= : Process num for businessworker}
+    {--businessworker : Enable business worker service}
+    {--businessworker-processes= : Process num for business worker}
     ';
 
-    protected $description = 'Gateway Worker Service';
+    protected $description = 'Gateway Worker Service.';
 
     public function handle()
     {
