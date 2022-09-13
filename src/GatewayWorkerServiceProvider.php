@@ -32,6 +32,8 @@ class GatewayWorkerServiceProvider extends ServiceProvider
             ]);
         }
 
-        Client::$registerAddress = config('gatewayworker.register_address');
+        if (config('gatewayworker.register_address')) {
+            Client::$registerAddress = config('gatewayworker.register_address');
+        }
     }
 }

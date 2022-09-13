@@ -10,15 +10,17 @@ declare(strict_types=1);
  */
 namespace Huangdijia\GatewayWorker;
 
+use GatewayWorker\BusinessWorker;
+
 interface GatewayWorkerEventInterface
 {
-    public static function onWorkerStart($businessWorker);
+    public static function onWorkerStart(BusinessWorker $businessWorker): void;
 
-    public static function onConnect($clientId);
+    public static function onConnect(string $clientId): void;
 
-    public static function onWebSocketConnect($clientId, $data);
+    public static function onWebSocketConnect(string $clientId, array $data): void;
 
-    public static function onMessage($clientId, $message);
+    public static function onMessage(string $clientId, mixed $revData): void;
 
-    public static function onClose($clientId);
+    public static function onClose(string $clientId): void;
 }
