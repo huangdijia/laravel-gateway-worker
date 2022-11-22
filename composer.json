@@ -18,7 +18,7 @@
         "illuminate/console": "^5.7|^6.0|^7.0|^8.0",
         "workerman/gateway-worker": "^3.0",
         "workerman/gatewayclient": "^3.0",
-        "workerman/workerman": "^3.5"
+        "workerman/workerman": "^3.5|^4.0"
     },
     "require-dev": {
         "orchestra/testbench": "^4.0"
