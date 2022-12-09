@@ -10,6 +10,7 @@ declare(strict_types=1);
  */
 namespace Huangdijia\GatewayWorker\Console;
 
+use Exception;
 use GatewayWorker\BusinessWorker;
 use GatewayWorker\Gateway;
 use GatewayWorker\Register;
@@ -108,11 +109,11 @@ class ServeCommand extends Command
 
             if ($eventHandler) {
                 if (! class_exists($eventHandler)) {
-                    throw new \Exception("Event '{$eventHandler}' is not exists", 1);
+                    throw new Exception("Event '{$eventHandler}' is not exists", 1);
                 }
 
                 if (! in_array(GatewayWorkerEventInterface::class, (array) class_implements($eventHandler))) {
-                    throw new \Exception("{$eventHandler} must implements of " . GatewayWorkerEventInterface::class, 1);
+                    throw new Exception("{$eventHandler} must implements of " . GatewayWorkerEventInterface::class, 1);
                 }
 
                 $worker->eventHandler = $eventHandler;
