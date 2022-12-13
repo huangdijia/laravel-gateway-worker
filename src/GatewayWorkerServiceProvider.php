@@ -24,9 +24,7 @@ class GatewayWorkerServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([__DIR__ . '/../config/gatewayworker.php' => $this->app->basePath('config/gatewayworker.php')]);
-        }
 
-        if ($this->app->runningInConsole()) {
             $this->commands([
                 Console\ServeCommand::class,
             ]);

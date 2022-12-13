@@ -11,7 +11,9 @@ declare(strict_types=1);
 namespace Huangdijia\GatewayWorker;
 
 use GatewayClient\Gateway;
+use Illuminate\Support\Traits\Macroable;
 
 class Client extends Gateway
 {
+    use Macroable;
 }
