@@ -27,7 +27,7 @@ jobs:
           extensions: redis, pdo, pdo_mysql, bcmath
           tools: phpize
           coverage: none
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
           composer require "laravel/framework:^${{ matrix.laravel }}" --no-update
           composer update --prefer-dist --no-interaction --no-progress
