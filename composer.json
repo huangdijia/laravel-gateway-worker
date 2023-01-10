@@ -14,8 +14,8 @@
     }],
     "require": {
         "php": ">=8.0",
-        "illuminate/support": "^9.0",
-        "illuminate/console": "^9.0",
+        "illuminate/support": "^9.0|^10.0",
+        "illuminate/console": "^9.0|^10.0",
         "workerman/gateway-worker": "^3.0.8|^4.0",
         "workerman/gatewayclient": "^3.0.13",
         "workerman/workerman": "^3.5|4.0"
