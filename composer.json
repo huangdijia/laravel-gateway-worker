@@ -16,9 +16,8 @@
         "php": ">=8.0",
         "illuminate/support": "^9.0|^10.0",
         "illuminate/console": "^9.0|^10.0",
-        "workerman/gateway-worker": "^3.0.8|^4.0",
-        "workerman/gatewayclient": "^3.0.13",
-        "workerman/workerman": "^3.5|4.0"
+        "workerman/gateway-worker": "^3.0.28",
+        "workerman/gatewayclient": "^3.0.13"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",
@@ -44,6 +43,7 @@
         }
     },
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "scripts": {
         "analyse": "phpstan analyse --memory-limit 300M -l 0 -c phpstan.neon ./src",
         "cs-fix": "php-cs-fixer fix $1",
