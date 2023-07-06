@@ -20,10 +20,10 @@
         "workerman/gatewayclient": "^3.0.13"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.0",
         "phpstan/phpstan": "^1.0",
         "phpunit/phpunit": "^9.5|^10.0",
-        "orchestra/testbench": "^7.0|^8.0"
+        "orchestra/testbench": "^7.0|^8.0",
+        "huangdijia/php-coding-standard": "^1.1"
     },
     "autoload": {
         "psr-4": {
