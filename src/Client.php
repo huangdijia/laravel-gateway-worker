@@ -8,6 +8,7 @@ declare(strict_types=1);
  * @document https://github.com/huangdijia/laravel-gateway-worker/blob/2.x/README.md
  * @contact  huangdijia@gmail.com
  */
+
 namespace Huangdijia\GatewayWorker;
 
 use GatewayClient\Gateway;
